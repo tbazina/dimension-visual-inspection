@@ -1,0 +1,55 @@
+pos: (0.0, 0.0)
+bypass: False
+terminals:
+    dipImgIn:
+        io: 'in'
+        multi: False
+        optional: False
+        renamable: False
+        removable: False
+        multiable: False
+    mmPxRatio:
+        io: 'in'
+        multi: False
+        optional: False
+        renamable: False
+        removable: False
+        multiable: False
+    dipMeasurementOut:
+        io: 'out'
+        multi: False
+        optional: False
+        renamable: False
+        removable: False
+        multiable: False
+nodes: [{'class': 'Kuwahara', 'name': 'Kuwahara.0', 'pos': (12.343266716353128, 142.6799806795069), 'state': {'pos': (12.343266716353128, 142.6799806795069), 'bypass': False, 'ctrl': {'shape': 'elliptic', 'size': 3.0, 'threshold': 0.0}}}, {'class': 'GradientMagnitude', 'name': 'GradientMagnitude.0', 'pos': (14.90690566545561, -1.8965967505697847), 'state': {'pos': (14.90690566545561, -1.8965967505697847), 'bypass': False, 'ctrl': {'sigmas': 1.3}}}, {'class': 'SeededWatershed', 'name': 'SeededWatershed.0', 'pos': (164.66567104017855, 8.560246698016101), 'state': {'pos': (164.66567104017855, 8.560246698016101), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'maxDepth': 1.0, 'maxSize': 0.0, 'outType': 'binary', 'sortOrder': 'low first', 'no gaps': False, 'uphill only': False}}}, {'class': 'Minima', 'name': 'Minima.0', 'pos': (178.7381622152792, -117.40407422216228), 'state': {'pos': (178.7381622152792, -117.40407422216228), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'outType': 'binary'}}}, {'class': 'BinaryAreaClosing', 'name': 'BinaryAreaClosing.0', 'pos': (223.224492082064, 289.49801393113347), 'state': {'pos': (223.224492082064, 289.49801393113347), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'filterSize': 50000.0, 'edgeCondition': 'background'}}}, {'class': 'EdgeObjectsRemove', 'name': 'EdgeObjectsRemove.0', 'pos': (306.56673253860384, 11.586516957332435), 'state': {'pos': (306.56673253860384, 11.586516957332435), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity'}}}, {'class': 'FlowchartPlot', 'name': 'FlowchartPlot.0', 'pos': (312.1261231744886, -184.6348525789694), 'state': {'pos': (312.1261231744886, -184.6348525789694), 'bypass': False}}, {'class': 'SegmentORing', 'name': 'SegmentORing.0', 'pos': (346.20941408371084, 293.2029618613841), 'state': {'pos': (346.20941408371084, 293.2029618613841), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity'}}}, {'class': 'FlowchartPlot', 'name': 'FlowchartPlot.1', 'pos': (446.0812093254922, -175.06745241372994), 'state': {'pos': (446.0812093254922, -175.06745241372994), 'bypass': False}}, {'class': 'Invert', 'name': 'Invert.0', 'pos': (571.6205637635711, 310.07081594307454), 'state': {'pos': (571.6205637635711, 310.07081594307454), 'bypass': False}}, {'class': 'ApplyMask', 'name': 'ApplyMask.1', 'pos': (609.588140586623, -70.87431179839277), 'state': {'pos': (609.588140586623, -70.87431179839277), 'bypass': False}}, {'class': 'SetPixelSize', 'name': 'SetPixelSize.0', 'pos': (673.9930417110095, 47.5754794699298), 'state': {'pos': (673.9930417110095, 47.5754794699298), 'bypass': False, 'ctrl': {'units': 'mm'}}}, {'class': 'SetPixelSize', 'name': 'SetPixelSize.1', 'pos': (674.1202605437251, 187.2541680300193), 'state': {'pos': (674.1202605437251, 187.2541680300193), 'bypass': False, 'ctrl': {'units': 'mm'}}}, {'class': 'FlowchartPlot', 'name': 'FlowchartPlot.2', 'pos': (677.7972923177168, -201.28890219707748), 'state': {'pos': (677.7972923177168, -201.28890219707748), 'bypass': False}}, {'class': 'ApplyMask', 'name': 'ApplyMask.0', 'pos': (703.8035200200724, 310.4675978157118), 'state': {'pos': (703.8035200200724, 310.4675978157118), 'bypass': False}}, {'class': 'Label', 'name': 'Label.0', 'pos': (829.4212950177878, 40.8255754074126), 'state': {'pos': (829.4212950177878, 40.8255754074126), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'minSize': 5000.0, 'maxSize': 0.0}}}, {'class': 'Label', 'name': 'Label.1', 'pos': (832.1904462292349, 188.03794225045345), 'state': {'pos': (832.1904462292349, 188.03794225045345), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'minSize': 5000.0, 'maxSize': 0.0}}}, {'class': 'FlowchartPlot', 'name': 'FlowchartPlot.3', 'pos': (841.3804721205968, 308.89608802482275), 'state': {'pos': (841.3804721205968, 308.89608802482275), 'bypass': False}}, {'class': 'Measure', 'name': 'Measure.0', 'pos': (971.4895550514539, 43.40497362357837), 'state': {'pos': (971.4895550514539, 43.40497362357837), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'Perimeter': True, 'Feret': True, 'CartesianBox': False, 'Minimum': False, 'Maximum': False, 'SolidArea': False, 'ConvexArea': False, 'ConvexPerimeter': False, 'AspectRatioFeret': False, 'Radius': True, 'P2A': False, 'Roundness': True, 'Circularity': False, 'PodczeckShapes': True, 'Solidity': False, 'Convexity': True, 'EllipseVariance': False, 'Eccentricity': False, 'Center': True}}}, {'class': 'Convert', 'name': 'Convert.0', 'pos': (972.3805095363325, 190.2116484629767), 'state': {'pos': (972.3805095363325, 190.2116484629767), 'bypass': False, 'ctrl': {'DataType': 'BIN'}}}, {'class': 'Fill', 'name': 'Fill.0', 'pos': (1108.1013875822252, 188.97828891781216), 'state': {'pos': (1108.1013875822252, 188.97828891781216), 'bypass': False, 'ctrl': {'intensity': 2.0}}}, {'class': 'ORingMeasurementDisplay', 'name': 'ORingMeasurementDisplay.0', 'pos': (1128.4397679679928, 40.15262804545728), 'state': {'pos': (1128.4397679679928, 40.15262804545728), 'bypass': False}}, {'class': 'Measure', 'name': 'Measure.1', 'pos': (1248.5789682842485, 191.6020523278998), 'state': {'pos': (1248.5789682842485, 191.6020523278998), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'Perimeter': True, 'Feret': True, 'CartesianBox': False, 'Minimum': False, 'Maximum': False, 'SolidArea': False, 'ConvexArea': False, 'ConvexPerimeter': False, 'AspectRatioFeret': False, 'Radius': True, 'P2A': False, 'Roundness': True, 'Circularity': False, 'PodczeckShapes': True, 'Solidity': False, 'Convexity': True, 'EllipseVariance': False, 'Eccentricity': False, 'Center': True}}}, {'class': 'CombineMeasurement', 'name': 'CombineMeasurement.0', 'pos': (1250.3914872356584, -117.23281253349185), 'state': {'pos': (1250.3914872356584, -117.23281253349185), 'bypass': False}}]
+connects: [('Input', 'dipImgIn', 'ApplyMask.0', 'dipImgIn'), ('Measure.0', 'dipMsrOut', 'ORingMeasurementDisplay.0', 'dipMsrOutIn'), ('Input', 'mmPxRatio', 'SetPixelSize.1', 'mmPxRatioIn'), ('SeededWatershed.0', 'dipImgOut', 'FlowchartPlot.2', 'dipImgIn'), ('Minima.0', 'dipImgOut', 'SeededWatershed.0', 'dipSeedsIn'), ('SegmentORing.0', 'dipOuterOut', 'ApplyMask.1', 'dipMaskIn'), ('Fill.0', 'dipImgOut', 'Measure.1', 'dipLblIn'), ('CombineMeasurement.0', 'listMsrOut', 'Output', 'dipMeasurementOut'), ('EdgeObjectsRemove.0', 'dipImgOut', 'BinaryAreaClosing.0', 'dipImgIn'), ('Label.1', 'dipImgOut', 'Convert.0', 'dipImgIn'), ('Input', 'dipImgIn', 'Measure.1', 'dipGreyIn'), ('Input', 'mmPxRatio', 'SetPixelSize.0', 'mmPxRatioIn'), ('Kuwahara.0', 'dipImgOut', 'Minima.0', 'dipImgIn'), ('BinaryAreaClosing.0', 'dipImgOut', 'SegmentORing.0', 'dipImgIn'), ('SegmentORing.0', 'dipInnerOut', 'SetPixelSize.1', 'dipImgIn'), ('SetPixelSize.1', 'dipImgOut', 'Label.1', 'dipImgIn'), ('Input', 'dipImgIn', 'Kuwahara.0', 'dipImgIn'), ('SegmentORing.0', 'dipInnerOut', 'Invert.0', 'dipImgIn'), ('ApplyMask.0', 'dipImgOut', 'FlowchartPlot.3', 'dipImgIn'), ('Label.0', 'dipImgOut', 'Measure.0', 'dipLblIn'), ('Measure.1', 'dipMsrOut', 'ORingMeasurementDisplay.0', 'dipMsrInIn'), ('Invert.0', 'dipImgOut', 'ApplyMask.0', 'dipMaskIn'), ('SetPixelSize.0', 'dipImgOut', 'Label.0', 'dipImgIn'), ('SegmentORing.0', 'dipOuterOut', 'SetPixelSize.0', 'dipImgIn'), ('Kuwahara.0', 'dipImgOut', 'GradientMagnitude.0', 'dipImgIn'), ('ApplyMask.1', 'dipImgOut', 'FlowchartPlot.1', 'dipImgIn'), ('Measure.1', 'dipMsrOut', 'CombineMeasurement.0', 'dipMsrInIn'), ('Measure.0', 'dipMsrOut', 'CombineMeasurement.0', 'dipMsrOutIn'), ('Input', 'dipImgIn', 'ApplyMask.1', 'dipImgIn'), ('Input', 'dipImgIn', 'Measure.0', 'dipGreyIn'), ('GradientMagnitude.0', 'dipImgOut', 'FlowchartPlot.0', 'dipImgIn'), ('SeededWatershed.0', 'dipImgOut', 'EdgeObjectsRemove.0', 'dipImgIn'), ('Label.1', 'dipImgOut', 'Fill.0', 'dipImgIn'), ('Convert.0', 'dipImgOut', 'Fill.0', 'dipMaskIn'), ('GradientMagnitude.0', 'dipImgOut', 'SeededWatershed.0', 'dipImgIn')]
+inputNode:
+    pos: (-150.0, 0.0)
+    bypass: False
+    terminals:
+        dipImgIn:
+            io: 'out'
+            multi: False
+            optional: False
+            renamable: False
+            removable: False
+            multiable: False
+        mmPxRatio:
+            io: 'out'
+            multi: False
+            optional: False
+            renamable: False
+            removable: False
+            multiable: False
+outputNode:
+    pos: (1400.73081757101, -118.83500488527439)
+    bypass: False
+    terminals:
+        dipMeasurementOut:
+            io: 'in'
+            multi: False
+            optional: False
+            renamable: False
+            removable: False
+            multiable: False

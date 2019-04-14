@@ -1,0 +1,41 @@
+pos: (0.0, 0.0)
+bypass: False
+terminals:
+    dipImgIn:
+        io: 'in'
+        multi: False
+        optional: False
+        renamable: False
+        removable: False
+        multiable: False
+    CalibConstOut:
+        io: 'out'
+        multi: False
+        optional: False
+        renamable: False
+        removable: False
+        multiable: False
+nodes: [{'class': 'Kuwahara', 'name': 'Kuwahara.0', 'pos': (-38.215849513059084, 43.31416814311444), 'state': {'pos': (-38.215849513059084, 43.31416814311444), 'bypass': False, 'ctrl': {'shape': 'rectangular', 'size': 1.0, 'threshold': 0.0}}}, {'class': 'GaussianConvolution', 'name': 'GaussianConvolution.0', 'pos': (-21.50934853703359, -89.78563367149533), 'state': {'pos': (-21.50934853703359, -89.78563367149533), 'bypass': False, 'ctrl': {'sigmas': 1.0}}}, {'class': 'GradientMagnitude', 'name': 'GradientMagnitude.0', 'pos': (71.2579381204684, 45.85125594767999), 'state': {'pos': (71.2579381204684, 45.85125594767999), 'bypass': False, 'ctrl': {'sigmas': 2.0}}}, {'class': 'Minima', 'name': 'Minima.0', 'pos': (118.35450715046642, -90.38371996695629), 'state': {'pos': (118.35450715046642, -90.38371996695629), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'outType': 'binary'}}}, {'class': 'SeededWatershed', 'name': 'SeededWatershed.0', 'pos': (192.38983057058317, 42.608416179745234), 'state': {'pos': (192.38983057058317, 42.608416179745234), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'maxDepth': 1.0, 'maxSize': 0.0, 'outType': 'binary', 'sortOrder': 'low first', 'no gaps': False, 'uphill only': False}}}, {'class': 'EdgeObjectsRemove', 'name': 'EdgeObjectsRemove.0', 'pos': (319.06889979834176, 41.64042368850522), 'state': {'pos': (319.06889979834176, 41.64042368850522), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity'}}}, {'class': 'FillHoles', 'name': 'FillHoles.0', 'pos': (428.00348437255957, 41.13160583993613), 'state': {'pos': (428.00348437255957, 41.13160583993613), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity'}}}, {'class': 'FlowchartPlot', 'name': 'FlowchartPlot.2', 'pos': (533.0065615139547, -121.01635272834505), 'state': {'pos': (533.0065615139547, -121.01635272834505), 'bypass': False}}, {'class': 'ApplyMask', 'name': 'ApplyMask.1', 'pos': (541.9178363819464, 39.87979504441799), 'state': {'pos': (541.9178363819464, 39.87979504441799), 'bypass': False}}, {'class': 'Label', 'name': 'Label.0', 'pos': (542.691545710873, 157.70069402769906), 'state': {'pos': (542.691545710873, 157.70069402769906), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'minSize': 9996.0, 'maxSize': 0.0}}}, {'class': 'FlowchartPlot', 'name': 'FlowchartPlot.1', 'pos': (653.7387742993676, -120.46859989526047), 'state': {'pos': (653.7387742993676, -120.46859989526047), 'bypass': False}}, {'class': 'Measure', 'name': 'Measure.0', 'pos': (674.8076568981504, 155.90395619867166), 'state': {'pos': (674.8076568981504, 155.90395619867166), 'bypass': False, 'ctrl': {'connectivity': '8-Connectivity', 'Perimeter': True, 'Feret': True, 'CartesianBox': False, 'Minimum': False, 'Maximum': False, 'SolidArea': False, 'ConvexArea': False, 'ConvexPerimeter': False, 'AspectRatioFeret': False, 'Radius': False, 'P2A': False, 'Roundness': False, 'Circularity': False, 'PodczeckShapes': True, 'Solidity': False, 'Convexity': False, 'EllipseVariance': False, 'Eccentricity': False, 'Center': True}}}, {'class': 'FlowchartPlot', 'name': 'FlowchartPlot.0', 'pos': (768.352012995382, -119.95174158614789), 'state': {'pos': (768.352012995382, -119.95174158614789), 'bypass': False}}, {'class': 'MeasurementDisplay', 'name': 'MeasurementDisplay.0', 'pos': (796.6743716237537, 33.57964345644547), 'state': {'pos': (796.6743716237537, 33.57964345644547), 'bypass': False}}, {'class': 'WorkingDistanceCorrection', 'name': 'WorkingDistanceCorrection.0', 'pos': (825.5594886967999, 155.6552470197989), 'state': {'pos': (825.5594886967999, 155.6552470197989), 'bypass': False, 'ctrl': {'feature': 'Feret Min', 'standard 1 height': 9.01, 'standard 1 measure': 20.0, 'standard 2 height': 1.999, 'standard 2 measure': 8.95}}}, {'class': 'FlowchartPlot', 'name': 'FlowchartPlot.3', 'pos': (893.2927383558399, -122.29526250392328), 'state': {'pos': (893.2927383558399, -122.29526250392328), 'bypass': False}}, {'class': 'CalibDisplay', 'name': 'CalibDisplay.0', 'pos': (1003.1455567345351, 153.88261297043505), 'state': {'pos': (1003.1455567345351, 153.88261297043505), 'bypass': False}}]
+connects: [('WorkingDistanceCorrection.0', 'CalibConstOut', 'Output', 'CalibConstOut'), ('Input', 'dipImgIn', 'Measure.0', 'dipGreyIn'), ('Input', 'dipImgIn', 'GaussianConvolution.0', 'dipImgIn'), ('EdgeObjectsRemove.0', 'dipImgOut', 'FillHoles.0', 'dipImgIn'), ('Label.0', 'dipImgOut', 'Measure.0', 'dipLblIn'), ('Measure.0', 'dipMsrOut', 'MeasurementDisplay.0', 'dipMsrIn'), ('Kuwahara.0', 'dipImgOut', 'FlowchartPlot.1', 'dipImgIn'), ('Kuwahara.0', 'dipImgOut', 'GradientMagnitude.0', 'dipImgIn'), ('GradientMagnitude.0', 'dipImgOut', 'SeededWatershed.0', 'dipImgIn'), ('FillHoles.0', 'dipImgOut', 'ApplyMask.1', 'dipMaskIn'), ('ApplyMask.1', 'dipImgOut', 'FlowchartPlot.3', 'dipImgIn'), ('Input', 'dipImgIn', 'ApplyMask.1', 'dipImgIn'), ('SeededWatershed.0', 'dipImgOut', 'EdgeObjectsRemove.0', 'dipImgIn'), ('FillHoles.0', 'dipImgOut', 'Label.0', 'dipImgIn'), ('GradientMagnitude.0', 'dipImgOut', 'FlowchartPlot.0', 'dipImgIn'), ('SeededWatershed.0', 'dipImgOut', 'FlowchartPlot.2', 'dipImgIn'), ('Minima.0', 'dipImgOut', 'SeededWatershed.0', 'dipSeedsIn'), ('GaussianConvolution.0', 'smoothOut', 'Minima.0', 'dipImgIn'), ('Measure.0', 'dipMsrOut', 'WorkingDistanceCorrection.0', 'dipMsrIn'), ('Input', 'dipImgIn', 'Kuwahara.0', 'dipImgIn'), ('WorkingDistanceCorrection.0', 'CalibConstOut', 'CalibDisplay.0', 'CalibConstIn')]
+inputNode:
+    pos: (-150.0, 0.0)
+    bypass: False
+    terminals:
+        dipImgIn:
+            io: 'out'
+            multi: False
+            optional: False
+            renamable: False
+            removable: False
+            multiable: False
+outputNode:
+    pos: (1005.5811198946838, 38.50066543940905)
+    bypass: False
+    terminals:
+        CalibConstOut:
+            io: 'in'
+            multi: False
+            optional: False
+            renamable: False
+            removable: False
+            multiable: False
