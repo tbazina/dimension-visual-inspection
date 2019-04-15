@@ -1,6 +1,6 @@
 # Machine vision application in workpiece dimensional control
 
-Software solution was developed as a part of the automated measurement system. System is explained in detail in master's thesis [Machine vision application in workpieces dimensional control](docs/thesis/Masters_thesis_Tomislav_Bazina_Full.pdf).
+Software solution was developed as a part of the automated measurement system. System is explained in detail in master's thesis [Machine vision application in workpieces dimensional control](thesis/Masters_thesis_Tomislav_Bazina_Full.pdf).
 
 ## Summary
 
@@ -67,8 +67,8 @@ Python modules:
 
 Example usage:
 
-<video src="docs/video/measurement_procedure.mp4" width="1600" height="930" controls preload></video>
+<video src="/video/measurement_procedure.mp4" width="1600" height="930" controls preload></video>
 
 ## License
 
-This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](../LICENSE.md) file for details
