@@ -1,6 +1,6 @@
 # Machine vision application in workpiece dimensional control
 
-Software solution was developed as a part of the automated measurement system. System is explained in detail in master's thesis [Machine vision application in workpieces dimensional control](thesis/Masters_thesis_Tomislav_Bazina_Full.pdf).
+Software solution was developed as a part of the automated measurement system. System is explained in detail in master's thesis [Machine vision application in workpieces dimensional control](docs/thesis/Masters_thesis_Tomislav_Bazina_Full.pdf).
 
 ## Summary
 
@@ -62,6 +62,10 @@ Python modules:
 * [PyQtGraph](https://github.com/pyqtgraph/pyqtgraph)
   * **Note**: PyQtGraph might need some slight modifications to work proprely with Python 3.6
 * [multiprocess](https://github.com/uqfoundation/multiprocess)
+
+### Usage example
+
+For video example check project Github pages [https://tbazina.github.io/dimension-visual-inspection/](https://tbazina.github.io/dimension-visual-inspection/)
 
 ## License
 
