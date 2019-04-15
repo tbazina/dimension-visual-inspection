@@ -37,7 +37,7 @@ Structure:
   * `process.py`
     * Objects for parallel processing
 * `main.py`
-  * Launching measurement application
+  * Launching application
 * `calibrate_flowchart.fc`
   * Stored calibration flowchart
 * `measure_flowchart.fc`
