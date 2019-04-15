@@ -67,8 +67,8 @@ Python modules:
 
 Example usage:
 
-<video src="/video/measurement_procedure.mp4" width="1600" height="930" controls preload></video>
+<video src="https://raw.githubusercontent.com/tbazina/dimension-visual-inspection/master/docs/video/measurement_procedure_reencode.mp4" width="800" height="480" controls preload></video>
 
 ## License
 
-This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](../LICENSE.md) file for details
+This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](https://raw.githubusercontent.com/tbazina/dimension-visual-inspection/master/LICENSE.md) file for details
