@@ -67,7 +67,10 @@ Python modules:
 
 Example usage:
 
-<video src="https://raw.githubusercontent.com/tbazina/dimension-visual-inspection/master/docs/video/measurement_procedure_reencode.mp4" width="800" height="480" controls preload></video>
+<video width="800" height="480" controls preload>
+  <source src="https://raw.githubusercontent.com/tbazina/dimension-visual-inspection/master/docs/video/measurement_procedure_reencode.mp4"></source>
+  <source src="https://raw.githubusercontent.com/tbazina/dimension-visual-inspection/master/docs/video/measurement_procedure_reencode.webm"></source>
+</video>
 
 ## License
 
