@@ -46,8 +46,6 @@ Structure:
   * Stored measurement result
 * Folder measurement_result
   * Stored measurement results
-* Folder thesis:
-  * Master's thesis
 
 ### Prerequisites
 
