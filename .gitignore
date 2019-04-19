@@ -26,3 +26,9 @@ trainImages/kolj_ind/*.bmp
 trainImages/cep_ind/*.bmp
 testImages/test2/Image*.bmp
 .idea/
+
+*.txt
+*.ods
+*.Rproj
+*.Rproj.user/
+*.Rproj.user

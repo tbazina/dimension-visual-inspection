@@ -65,6 +65,20 @@ Python modules:
 
 For video example check project Github pages [https://tbazina.github.io/dimension-visual-inspection/](https://tbazina.github.io/dimension-visual-inspection/)
 
+## Measurement system analysis
+
+Simple R script `measurement_system_analysis.R` for optical system capability analysis is located in folder measurement_analysis. Folder also contains input data in .csv format and output images.
+
+### R Libraries
+
+Following R libraries are required to run script:
+* [readr](https://github.com/tidyverse/readr)
+* [qualityTools](http://www.r-qualitytools.org/)
+* [irr](https://cran.r-project.org/web/packages/irr/index.html)
+* [ggplot2](https://github.com/tidyverse/ggplot2)
+* [Hmisc](http://biostat.mc.vanderbilt.edu/wiki/Main/Hmisc)
+* [tidyr](https://github.com/tidyverse/tidyr)
+
 ## License
 
 This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](LICENSE.md) file for details
