@@ -79,9 +79,11 @@ Simple R script `measurement_system_analysis.R` for optical system capability an
 Following R libraries are required to run script:
 * [readr](https://github.com/tidyverse/readr)
 * [qualityTools](http://www.r-qualitytools.org/)
+* [SixSigma](http://www.sixsigmawithr.com/)
 * [irr](https://cran.r-project.org/web/packages/irr/index.html)
 * [ggplot2](https://github.com/tidyverse/ggplot2)
 * [Hmisc](http://biostat.mc.vanderbilt.edu/wiki/Main/Hmisc)
+* [dplyr](https://github.com/tidyverse/dplyr)
 * [tidyr](https://github.com/tidyverse/tidyr)
 
 ## License
